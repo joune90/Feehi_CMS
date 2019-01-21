@@ -1,0 +1,86 @@
+2019-01-21 15:40:24 [127.0.0.1][1][ej964fvem93ahqpvljcp4e6bo4][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'SMTP地址不能为空。<br/>SMTP用户名不能为空。<br/>' in D:\wamp64\www\Feehi_CMS\backend\controllers\SettingController.php:241
+Stack trace:
+#0 [internal function]: backend\controllers\SettingController->actionTestSmtp()
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('test-smtp', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('setting/test-sm...', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\admin\index.php(18): yii\base\Application->run()
+#7 {main}
+2019-01-21 15:40:24 [127.0.0.1][1][ej964fvem93ahqpvljcp4e6bo4][info][application] $_GET = [
+    'r' => 'setting/test-smtp'
+]
+
+$_POST = [
+    '_csrf_backend' => '-4t9a_zzG393KiBJazJPVqc3bUw39hobrHWfWsTQgWiJzT4oqLEvERRTeDMSay5lynAdD3W7eGvlPPg_tb_rCg=='
+    'SettingSmtpForm' => [
+        'smtp_host' => ''
+        'smtp_port' => ''
+        'smtp_username' => ''
+        'smtp_password' => ''
+        'smtp_nickname' => ''
+        'smtp_encryption' => ''
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY\";}'
+    'PHPSESSID' => 'qiamrc6vh7bfh0d7r6vs97ich7'
+    'BACKEND_FEEHICMS' => 'ej964fvem93ahqpvljcp4e6bo4'
+    '_csrf_backend' => '56259f3688348521641363a6a4cefa67171aa6d9c0ca8e7dae8ab5354d30c028a:2:{i:0;s:13:\"_csrf_backend\";i:1;s:32:\"rFCCTB4ncyXzyYa3mGpCBMbpIIgeqojb\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '_backend_returnUrl' => '/admin/'
+    '__captcha/site/captcha' => 'tyyi'
+    '__captcha/site/captchacount' => 1
+    '__backend__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '316'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www.myblog.com'
+    'HTTP_X_CSRF_TOKEN' => '-4t9a_zzG393KiBJazJPVqc3bUw39hobrHWfWsTQgWiJzT4oqLEvERRTeDMSay5lynAdD3W7eGvlPPg_tb_rCg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.3 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://www.myblog.com/admin/index.php?r=setting%2Fsmtp'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY%22%3B%7D; PHPSESSID=qiamrc6vh7bfh0d7r6vs97ich7; BACKEND_FEEHICMS=ej964fvem93ahqpvljcp4e6bo4; _csrf_backend=56259f3688348521641363a6a4cefa67171aa6d9c0ca8e7dae8ab5354d30c028a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf_backend%22%3Bi%3A1%3Bs%3A32%3A%22rFCCTB4ncyXzyYa3mGpCBMbpIIgeqojb%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/admin/index.php'
+    'REMOTE_PORT' => '53782'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=setting%2Ftest-smtp'
+    'REQUEST_URI' => '/admin/index.php?r=setting%2Ftest-smtp'
+    'SCRIPT_NAME' => '/admin/index.php'
+    'PHP_SELF' => '/admin/index.php'
+    'REQUEST_TIME_FLOAT' => 1548056423.646
+    'REQUEST_TIME' => 1548056423
+]
