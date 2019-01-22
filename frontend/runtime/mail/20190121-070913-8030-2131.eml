@@ -1,0 +1,185 @@
+Message-ID: <903e6f7e405af8394dc7aa26347b7c2d@www.myblog.com>
+Date: Mon, 21 Jan 2019 07:09:13 +0000
+Subject: =?UTF-8?Q?=E6=9D=A5=E8=87=AA?= Feehi CMS
+ =?UTF-8?Q?=E5=89=8D=E5=8F=B0=E7=9A=84=E6=96=B0?=
+ =?UTF-8?Q?=E6=97=A5=E5=BF=97=E6=B6=88=E6=81=AF?=
+From: Feehi CMS robot  <admin@feehi.com>
+To: admin@feehi.com, liufee@126.com
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+2019-01-21 07:09:13 [127.0.0.1][-][-][error][yii\db\Exception]
+exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or
+view not found: 1146 Table 'feehi.options' doesn't exist' in
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1258):
+PDOStatement->execute()
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1148):
+yii\db\Command->internalExecute('<span class=3D"st...')
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(399):
+yii\db\Command->queryInternal('<span class=3D"st...', '<span
+class=3D"ke...')
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Query.php(237):
+yii\db\Command->queryAll()
+#4
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\ActiveQuery.php(133):
+yii\db\Query->all('<span class=3D"ke...')
+#5 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(48):
+yii\db\ActiveQuery->all()
+#6
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\BaseObject.php(109):
+feehi\components\Feehi->init()
+#7 [internal function]: yii\base\BaseObject->__construct('[]')
+#8 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(375):
+ReflectionClass->newInstanceArgs('[[]]')
+#9 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(156):
+yii\di\Container->build('<span class=3D"st...', '[]', '[]')
+#10 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\BaseYii.php(349):
+yii\di\Container->get('<span class=3D"st...', '[]', '[]')
+#11
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(137):
+yii\BaseYii::createObject('[<span class=3D"s...')
+#12 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(742):
+yii\di\ServiceLocator->get('<span class=3D"st...', '<span class=3D"ke...')
+#13
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(74):
+yii\base\Module->get('<span class=3D"st...')
+#14 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(115):
+yii\di\ServiceLocator->__get('<span class=3D"st...')
+#15 [internal function]:
+feehi\components\Feehi::frontendInit(Object(yii\base\Event))
+#16
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Component.php(627):
+call_user_func('[<span class=3D"s...', Object(yii\base\Event))
+#17
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(383):
+yii\base\Component->trigger('<span class=3D"st...')
+#18 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17):
+yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base
+table or view not found: 1146 Table 'feehi.options' doesn't exist
+The SQL being executed was: SELECT * FROM `options` WHERE (`type`=3D0)
+OR ((`type`=3D1) AND (`autoload`=3D1))' in
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1263):
+yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM
+`...')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1148):
+yii\db\Command->internalExecute('<span class=3D"st...')
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(399):
+yii\db\Command->queryInternal('<span class=3D"st...', '<span
+class=3D"ke...')
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Query.php(237):
+yii\db\Command->queryAll()
+#4
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\ActiveQuery.php(133):
+yii\db\Query->all('<span class=3D"ke...')
+#5 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(48):
+yii\db\ActiveQuery->all()
+#6
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\BaseObject.php(109):
+feehi\components\Feehi->init()
+#7 [internal function]: yii\base\BaseObject->__construct('[]')
+#8 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(375):
+ReflectionClass->newInstanceArgs('[[]]')
+#9 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(156):
+yii\di\Container->build('<span class=3D"st...', '[]', '[]')
+#10 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\BaseYii.php(349):
+yii\di\Container->get('<span class=3D"st...', '[]', '[]')
+#11
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(137):
+yii\BaseYii::createObject('[<span class=3D"s...')
+#12 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(742):
+yii\di\ServiceLocator->get('<span class=3D"st...', '<span class=3D"ke...')
+#13
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(74):
+yii\base\Module->get('<span class=3D"st...')
+#14 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(115):
+yii\di\ServiceLocator->__get('<span class=3D"st...')
+#15 [internal function]:
+feehi\components\Feehi::frontendInit(Object(yii\base\Event))
+#16
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Component.php(627):
+call_user_func('[<span class=3D"s...', Object(yii\base\Event))
+#17
+D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(383):
+yii\base\Component->trigger('<span class=3D"st...')
+#18 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17):
+yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] =3D> 42S02
+    [1] =3D> 1146
+    [2] =3D> Table 'feehi.options' doesn't exist
+)
+
+2019-01-21 07:09:13 [127.0.0.1][-][-][info][application] $_GET =3D []
+
+$_POST =3D []
+
+$_FILES =3D []
+
+$_COOKIE =3D []
+
+$_SERVER =3D [
+    'HTTP_HOST' =3D> 'www.myblog.com'
+    'HTTP_USER_AGENT' =3D> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64;
+rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_ACCEPT' =3D>
+'text/html,application/xhtml+xml,application/xml;q=3D0.9,*/*;q=3D0.8'
+    'HTTP_ACCEPT_LANGUAGE' =3D>
+'zh-CN,zh;q=3D0.8,zh-TW;q=3D0.7,zh-HK;q=3D0.5,en-US;q=3D0.3,en;q=3D0.2'
+    'HTTP_ACCEPT_ENCODING' =3D> 'gzip, deflate'
+    'HTTP_CONNECTION' =3D> 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' =3D> '1'
+    'PATH' =3D> 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program
+Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows=
+\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.=
+6.17\\bin;C:\\Program
+Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner
+15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\S=
+ystem32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program
+Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program
+Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program
+Files\\MATLAB\\R2016a\\bin;C:\\Program
+Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program
+Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local=
+\\Microsoft\\WindowsApps'
+    'SystemRoot' =3D> 'C:\\WINDOWS'
+    'COMSPEC' =3D> 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' =3D>
+'.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' =3D> 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' =3D> '<address>Apache/2.4.23 (Win64) PHP/5.6.25
+Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' =3D> 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' =3D> 'www.myblog.com'
+    'SERVER_ADDR' =3D> '127.0.0.1'
+    'SERVER_PORT' =3D> '80'
+    'REMOTE_ADDR' =3D> '127.0.0.1'
+    'DOCUMENT_ROOT' =3D> 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' =3D> 'http'
+    'CONTEXT_PREFIX' =3D> ''
+    'CONTEXT_DOCUMENT_ROOT' =3D> 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' =3D> 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' =3D>
+'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' =3D> '50810'
+    'GATEWAY_INTERFACE' =3D> 'CGI/1.1'
+    'SERVER_PROTOCOL' =3D> 'HTTP/1.1'
+    'REQUEST_METHOD' =3D> 'GET'
+    'QUERY_STRING' =3D> ''
+    'REQUEST_URI' =3D> '/'
+    'SCRIPT_NAME' =3D> '/index.php'
+    'PHP_SELF' =3D> '/index.php'
+    'REQUEST_TIME_FLOAT' =3D> 1548054552.642
+    'REQUEST_TIME' =3D> 1548054552
+]

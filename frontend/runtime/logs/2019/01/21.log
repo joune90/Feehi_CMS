@@ -1,0 +1,418 @@
+2019-01-21 07:09:13 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'feehi.options' doesn't exist' in D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php:1258
+Stack trace:
+#0 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1258): PDOStatement->execute()
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('<span class="st...')
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Query.php(237): yii\db\Command->queryAll()
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#5 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(48): yii\db\ActiveQuery->all()
+#6 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\BaseObject.php(109): feehi\components\Feehi->init()
+#7 [internal function]: yii\base\BaseObject->__construct('[]')
+#8 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs('[[]]')
+#9 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[]')
+#10 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('<span class="st...', '[]', '[]')
+#11 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject('[<span class="s...')
+#12 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('<span class="st...', '<span class="ke...')
+#13 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('<span class="st...')
+#14 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(115): yii\di\ServiceLocator->__get('<span class="st...')
+#15 [internal function]: feehi\components\Feehi::frontendInit(Object(yii\base\Event))
+#16 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Component.php(627): call_user_func('[<span class="s...', Object(yii\base\Event))
+#17 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(383): yii\base\Component->trigger('<span class="st...')
+#18 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'feehi.options' doesn't exist
+The SQL being executed was: SELECT * FROM `options` WHERE (`type`=0) OR ((`type`=1) AND (`autoload`=1))' in D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Schema.php:664
+Stack trace:
+#0 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1263): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(1148): yii\db\Command->internalExecute('<span class="st...')
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\Query.php(237): yii\db\Command->queryAll()
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all('<span class="ke...')
+#5 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(48): yii\db\ActiveQuery->all()
+#6 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\BaseObject.php(109): feehi\components\Feehi->init()
+#7 [internal function]: yii\base\BaseObject->__construct('[]')
+#8 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs('[[]]')
+#9 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('<span class="st...', '[]', '[]')
+#10 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('<span class="st...', '[]', '[]')
+#11 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(137): yii\BaseYii::createObject('[<span class="s...')
+#12 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(742): yii\di\ServiceLocator->get('<span class="st...', '<span class="ke...')
+#13 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\di\ServiceLocator.php(74): yii\base\Module->get('<span class="st...')
+#14 D:\wamp64\www\Feehi_CMS\feehi\components\Feehi.php(115): yii\di\ServiceLocator->__get('<span class="st...')
+#15 [internal function]: feehi\components\Feehi::frontendInit(Object(yii\base\Event))
+#16 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Component.php(627): call_user_func('[<span class="s...', Object(yii\base\Event))
+#17 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(383): yii\base\Component->trigger('<span class="st...')
+#18 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#19 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'feehi.options' doesn't exist
+)
+
+2019-01-21 07:09:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' => '50810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548054552.642
+    'REQUEST_TIME' => 1548054552
+]
+2019-01-21 15:19:55 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '未找到分类toastr.js.map' in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:66
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2019-01-21 15:19:54 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'qiamrc6vh7bfh0d7r6vs97ich7'
+    '_csrf' => '2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qiamrc6vh7bfh0d7r6vs97ich7; _csrf=2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' => '51616'
+    'REDIRECT_URL' => '/toastr.js.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/toastr.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548055194.247
+    'REQUEST_TIME' => 1548055194
+]
+2019-01-21 15:20:15 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '未找到分类toastr.js.map' in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:66
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2019-01-21 15:20:13 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'qiamrc6vh7bfh0d7r6vs97ich7'
+    '_csrf' => '2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qiamrc6vh7bfh0d7r6vs97ich7; _csrf=2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' => '51667'
+    'REDIRECT_URL' => '/toastr.js.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/toastr.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548055213.468
+    'REQUEST_TIME' => 1548055213
+]
+2019-01-21 15:20:19 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '未找到分类toastr.js.map' in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:66
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2019-01-21 15:20:17 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'qiamrc6vh7bfh0d7r6vs97ich7'
+    '_csrf' => '2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=qiamrc6vh7bfh0d7r6vs97ich7; _csrf=2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY%22%3B%7D'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' => '51667'
+    'REDIRECT_URL' => '/toastr.js.map'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/toastr.js.map'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548055217.397
+    'REQUEST_TIME' => 1548055217
+]
+2019-01-21 15:20:37 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '未找到分类images/counter.gif' in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:66
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2019-01-21 15:20:37 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY\";}'
+    'PHPSESSID' => 'qiamrc6vh7bfh0d7r6vs97ich7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.myblog.com/index.php?r=article%2Fview&id=18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY%22%3B%7D; PHPSESSID=qiamrc6vh7bfh0d7r6vs97ich7'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' => '51731'
+    'REDIRECT_URL' => '/images/counter.gif'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/counter.gif'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548055236.834
+    'REQUEST_TIME' => 1548055236
+]
+2019-01-21 15:20:38 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '未找到分类images/jiathis_ico.png' in D:\wamp64\www\Feehi_CMS\frontend\controllers\ArticleController.php:66
+Stack trace:
+#0 [internal function]: frontend\controllers\ArticleController->actionIndex('')
+#1 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#5 D:\wamp64\www\Feehi_CMS\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\wamp64\www\Feehi_CMS\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2019-01-21 15:20:37 [127.0.0.1][-][qiamrc6vh7bfh0d7r6vs97ich7][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY\";}'
+    'PHPSESSID' => 'qiamrc6vh7bfh0d7r6vs97ich7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'www.myblog.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.3 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.myblog.com/index.php?r=article%2Fview&id=18'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2679a807d0b0937ab7b6f3384d13f79ecd83ddfac0eb3452d58ed754232303dfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wlhlPRKox-5V7o9Y3pdd09y_rj18ARSY%22%3B%7D; PHPSESSID=qiamrc6vh7bfh0d7r6vs97ich7'
+    'PATH' => 'D:\\Program Files\\Java\\jdk1.8.0_131\\bin;D:\\Program Files\\Java\\jdk1.8.0_131\\jre\\bin;D:\\apache-maven-3.5.0\\bin;C:\\Windows\\System32;D:\\wamp64\\bin\\php\\php7.0.10;D:\\wamp\\bin\\mysql\\mysql5.6.17\\bin;C:\\Program Files\\TortoiseGit\\bin;D:\\Program Files (x86)\\Sybase\\PowerDesigner 15;C:\\MATLAB7\\bin\\win32;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\Program Files\\Git\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C:\\Program Files\\MATLAB\\R2016a\\bin;C:\\Program Files\\MATLAB\\R2016a\\polyspace\\bin;C:\\Program Files\\PuTTY\\;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win64) PHP/5.6.25 Server at www.myblog.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/5.6.25'
+    'SERVER_NAME' => 'www.myblog.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp64/www/Feehi_CMS/frontend/web'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'D:/wamp64/www/Feehi_CMS/frontend/web/index.php'
+    'REMOTE_PORT' => '51732'
+    'REDIRECT_URL' => '/images/jiathis_ico.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/jiathis_ico.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1548055236.829
+    'REQUEST_TIME' => 1548055236
+]
