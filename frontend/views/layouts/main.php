@@ -77,7 +77,7 @@ AppAsset::register($this);
                 <span class="nav-search_1"><i class="fa fa-navicon"></i></span>
                 <hgroup class="logo-site" style="margin-top: 10px;">
                     <h1 class="site-title">
-                        <a href="<?= Yii::$app->getHomeUrl() ?>"><img src="<?=Yii::$app->getRequest()->getBaseUrl()?>/static/images/logo.png" alt="<?= Yii::$app->feehi->website_title ?>"></a>
+                        <a href="<?= Yii::$app->getHomeUrl() ?>"><img src="<?=Yii::$app->getRequest()->getBaseUrl()?>/static/images/logo1.jpg" alt="<?= Yii::$app->feehi->website_title ?>"></a>
                     </h1>
                 </hgroup>
                 <div id="site-nav-wrap">
@@ -121,21 +121,21 @@ AppAsset::register($this);
 
 <div class="branding branding-black">
     <div class="container_f">
-        <h2><?= Yii::t('frontend', 'Effective,Professional,Conform to SEO') ?></h2>
-        <a class="btn btn-lg" href="http://www.feehi.com/page/contact" target="_blank"><?= Yii::t('frontend', 'Contact us') ?></a>
+        <h2><?= Yii::t('frontend', 'The Wonderful War3 Report') ?></h2>
+        <a class="btn btn-lg" href="<?php echo Url::toRoute('page/contact')?>" target="_blank"><?= Yii::t('frontend', 'Contact us') ?></a>
     </div>
 </div>
 
 <footer class="footer">
     <div class="footer-inner">
         <p>
-            <a href="http://www.feehi.com/" title="Feehi CMS">Feehi CMS</a> <?= Yii::t('frontend', 'Copyright, all rights reserved') ?> © 2015-<?=date('Y')?>&nbsp;&nbsp;
+            <a href="http://www.tkt90.cn/" title="war3rep">War3 Rep</a> <?= Yii::t('frontend', 'Copyright, all rights reserved') ?> © 2015-<?=date('Y')?>&nbsp;&nbsp;
             <select onchange="location.href=this.options[this.selectedIndex].value;" style="height: 30px">
                 <option <?php if (Yii::$app->language == 'zh-CN') {echo 'selected';} ?> value="<?= Url::to(['site/language', 'lang' => 'zh-CN']) ?>">简体中文</option>
                 <option <?php if (Yii::$app->language == 'en-US') {echo "selected";} ?> value="<?= Url::to(['site/language', 'lang' => 'en-US']) ?>">English</option>
             </select>
         </p>
-        <p><?=Yii::$app->feehi->website_icp?> Powered by Feehi CMS <a title="飞嗨" target="_blank" href="http://blog.feehi.com">飞嗨</a></p>
+        <p><?=Yii::$app->feehi->website_icp?> Powered by War3 Rep &nbsp;<a title="魔兽争霸战报" target="_blank" href="http://www.tkt90.cn">war3rep</a></p>
     </div>
 </footer>
 

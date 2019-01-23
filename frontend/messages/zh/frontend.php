@@ -16,7 +16,7 @@ return [
     'Search' => '搜索',
     'Baidu' => '百度',
     'Please input keywords' => '请输入关键字',
-    'Effective,Professional,Conform to SEO' => '高效，专业，符合SEO',
+    'The Wonderful War3 Report' => '精彩的魔兽争霸战报',
     'Copyright, all rights reserved' => '版权所有，保留一切权利',
     'If you forgot your password you can' => '忘记密码您可以',
     'reset it' => '重置',

@@ -19,6 +19,7 @@ use frontend\models\FriendlyLink;
         <div class="textwidget">
             <div class="social">
                 <a href="<?= Yii::$app->feehi->weibo ?>" rel="external nofollow" title="" target="_blank" data-original-title="新浪微博"><i class="sinaweibo fa fa-weibo"></i></a>
+                <?php if(0){;?>
                 <a href="<?= Yii::$app->feehi->facebook ?>" rel="external nofollow" title="" target="_blank" data-original-title="Facebook"><i class="facebook fa fa-facebook"></i></a>
                 <a class="weixin" data-original-title="" title=""><i class="weixins fa fa-weixin"></i>
                     <div class="weixin-popover">
@@ -29,6 +30,7 @@ use frontend\models\FriendlyLink;
                         </div>
                     </div>
                 </a>
+                <?php };?>
                 <a href="mailto:<?= Yii::$app->feehi->email ?>" rel="external nofollow" title="" target="_blank" data-original-title="Email"><i class="email fa fa-envelope-o"></i></a>
                 <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=<?= Yii::$app->feehi->qq ?>&amp;site=qq&amp;menu=yes" rel="external nofollow" title="" target="_blank" data-original-title="联系QQ"><i class="qq fa fa-qq"></i></a>
                 <a href="<?= Url::to(['article/rss'])?>" rel="external nofollow" target="_blank" title="" data-original-title="订阅本站"><i class="rss fa fa-rss"></i></a>
@@ -37,17 +39,17 @@ use frontend\models\FriendlyLink;
     </div>
     <div class="widget d_textbanner">
         <a class="style03" target="_blank"
-           href="http://shang.qq.com/wpa/qunwpa?idkey=3693ea25b07705069bc9210c5272830f2b00bd891b14bb6f60ce7bb070570aa9">
+           href="http://shang.qq.com/wpa/qunwpa?idkey=55eb94b0f26ddd29b665390d9016a54c5131b2081a22cc9a20a2f9ee999ac3c8">
             <strong><?=Yii::t('frontend', 'Join group')?></strong>
             <h2><?=Yii::t('frontend', 'Official QQ group - main')?></h2>
-            <p><?=Yii::t('frontend', 'FeehiCMS official QQ group number: {number}', ['number'=>'258780872'])?>
+            <p><?=Yii::t('frontend', 'FeehiCMS official QQ group number: {number}', ['number'=>'921500437'])?>
                 <br>
                 <br>
-                <img border="0" src="<?=Yii::$app->getRequest()->getBaseUrl()?>/static/images/group.png" alt="feehi cms" title="feehi cms">
+                <img border="0" src="<?=Yii::$app->getRequest()->getBaseUrl()?>/static/images/group.png" alt="war3 rep" title="war3 rep">
             </p>
         </a>
     </div>
-
+    <?php if(0):;?>
     <div class="widget d_textbanner">
         <a class="style01" target="_blank" href="http://cms.feehi.com">
             <strong><?=Yii::t('frontend', 'New generation CMS FeehiCMS')?></strong>
@@ -55,7 +57,7 @@ use frontend\models\FriendlyLink;
             <p><?=Yii::t('frontend', 'FeehiCMS based on yii2, support php7, makes website more excellent...')?></p>
         </a>
     </div>
-
+    <?php endif;?>
     <div class="widget d_banner">
         <div class="d_banner_inner">
             <?php $ad = Options::getAdByName('sidebar_right_1')?>
